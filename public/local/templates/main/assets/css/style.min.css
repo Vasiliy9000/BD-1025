@@ -1,0 +1,182 @@
+.form-apply__progress-handler.orange {
+    background-color: #FF5005;
+}
+
+@keyframes progress {
+    to {
+        background-position: 15px 0
+@@ -8969,6 +8973,10 @@ textarea.form__input + .form__input-placeholder {
+    flex: 0 0 624px
+}
+
+.home-apply .form-apply.flex-55 {
+    flex: 0 0 55%;
+}
+
+.home-apply .form-apply__body {
+    max-width: 516px
+}
+@@ -15067,10 +15075,26 @@ textarea.form__input + .form__input-placeholder {
+    background: #FF5005;
+}
+
+.white-background {
+    background: white;
+}
+
+.white-text {
+    color: white;
+}
+
+.gray-background {
+    background: #F8F8F8;
+}
+
+.dark-background {
+    background: #d8dbe9;
+}
+
+.dark-text {
+    color: gray;
+}
+
+.gray-text {
+    color: #A7ADC8;
+}
+@@ -15080,3 +15104,136 @@ textarea.form__input + .form__input-placeholder {
+    display: flex;
+    gap: 0px
+}
+
+/* верстка блока предложения лизинга на leasing-semitrailers, было взято из фигмы*/
+.wagnermaier {
+    position: absolute;
+    top: 33.32px;
+    left: 28.16px;
+    letter-spacing: -0.04em;
+    line-height: 25.38px;
+    font-weight: 500;
+    display: inline-block;
+    width: 306.2px;
+}
+
+.freepik-translucent-orange-3d-icon {
+    position: absolute;
+    left: 66.09px;
+    width: 535.7px;
+    height: 416.6px;
+    object-fit: cover;
+}
+
+.div {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 19.04px;
+    font-weight: 500;
+}
+
+.separator-icon {
+    width: 0.4px;
+    position: relative;
+    border-radius: 0.16px;
+    max-width: 100%;
+    overflow: hidden;
+    height: 31.7px;
+}
+
+.parent {
+    width: 184px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.icon32pxchevron {
+    width: 25.4px;
+    position: relative;
+    height: 25.4px;
+    object-fit: contain;
+}
+
+.btn-leasing {
+    position: absolute;
+    top: 176.9px;
+    border-radius: 1.6px;
+    background-color: #ff5005;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 15.87px;
+    color: #fff;
+}
+
+.wagnermaier-parent {
+    width: 100%;
+    position: relative;
+    background-color: #f2f2fa;
+    height: 527.5px;
+    overflow: hidden;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 22.21px;
+    color: #000;
+    font-family: 'TT Hoves Pro';
+}
+
+.left-folder-leasing-semitrailers {
+    padding: 44px;
+    background: #f2f2fa;
+}
+
+.folder__body-leasing-semitrailers {
+    padding: 44px;
+    background: #f2f2fa;
+    border-radius: 4px 0 4px 4px;
+}
+
+/* блок кнопок второго этапа формы на странице leasing-semitrailers*/
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    user-select: none;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+    background: #FF5005;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+    background-color: #FF5005;
+}
+
+/* Для скрытия соседнего элемента с формой. Скрываем обертку при успешной отправке*/
+.home-apply__message ~ .hind-form-section {
+    display: none;
+}
+
+/* Скрываем псевдоэлемент before при наличии сообщения обуспешной отправке в любом месте секции home-apply*/
+.home-apply:has(.home-apply__message) .folder::before {
+    display: none;
+}
+
+/* Дублируем для старых браузеров через другой селектор */
+.home-apply__body > .home-apply__message ~ .folder::before {
+    display: none;
+}
